@@ -24,7 +24,7 @@ client = tweepy.Client(
 )
 
 
-genai.configure(api_key="AIzaSyDWOzNmwlMEYi7_Qh65DTPw5MoBiVX6M0U")
+genai.configure(api_key=os.environ["google_api_key"])
 
 # Set up the model
 generation_config = {
