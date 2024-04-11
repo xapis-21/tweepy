@@ -85,16 +85,15 @@ def makeTweet():
                  'parts':["for reference in ypur next tweet the tim in Uganda is: " + localTime]})
    
   
-schedule.every().day.at("6:00").do(makeTweet)
-schedule.every().day.at("7:00").do(makeTweet)
-schedule.every().day.at("8:00").do(makeTweet)
-schedule.every().day.at("9:00").do(makeTweet) 
+schedule.every().day.at("06:00").do(makeTweet)
+schedule.every().day.at("08:00").do(makeTweet)
 schedule.every().day.at("10:00").do(makeTweet) 
 
-schedule.every().day.at("8:00").do(makeTweet)
-schedule.every().day.at("9:00").do(makeTweet)
-schedule.every().day.at("10:00").do(makeTweet)
-schedule.every().day.at("11:00").do(makeTweet)
+
+schedule.every().day.at("20:00").do(makeTweet)
+schedule.every().day.at("21:00").do(makeTweet)
+schedule.every().day.at("22:00").do(makeTweet)
+schedule.every().day.at("23:00").do(makeTweet)
 
 while True:
     schedule.run_pending()
