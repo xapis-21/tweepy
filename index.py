@@ -281,25 +281,33 @@ def makeTweet():
    
   
 
-# schedule.every().day.at("06:00").do(makeTweet)
-# schedule.every().day.at("08:00").do(makeTweet)
-# schedule.every().day.at("09:00").do(makeTweet)
-# schedule.every().day.at("10:00").do(makeTweet) 
-# schedule.every().day.at("10:45").do(makeTweet)
+schedule.every().day.at("06:00").do(makeTweet)
+schedule.every().day.at("07:00").do(makeTweet)
+schedule.every().day.at("08:00").do(makeTweet)
+schedule.every().day.at("09:00").do(makeTweet)
+schedule.every().day.at("10:00").do(makeTweet) 
+schedule.every().day.at("10:45").do(makeTweet)
+schedule.every().day.at("11:45").do(makeTweet)
+schedule.every().day.at("12:45").do(makeTweet)
+schedule.every().day.at("13:45").do(makeTweet)
+schedule.every().day.at("14:45").do(makeTweet)
+schedule.every().day.at("15:45").do(makeTweet)
 
-# schedule.every().day.at("18:00").do(makeTweet)
-# schedule.every().day.at("19:00").do(makeTweet)
-# schedule.every().day.at("20:00").do(makeTweet)
-# schedule.every().day.at("21:00").do(makeTweet)
-# schedule.every().day.at("22:00").do(makeTweet)
-# schedule.every().day.at("23:00").do(makeTweet)
-# schedule.every().day.at("00:00").do(makeTweet)
-# schedule.every().day.at("02:00").do(makeTweet)
-# schedule.every().day.at("05:00").do(makeTweet)
+schedule.every().day.at("16:45").do(makeTweet)
+schedule.every().day.at("17:45").do(makeTweet)
+
+schedule.every().day.at("18:00").do(makeTweet)
+schedule.every().day.at("19:00").do(makeTweet)
+schedule.every().day.at("20:00").do(makeTweet)
+schedule.every().day.at("21:00").do(makeTweet)
+schedule.every().day.at("22:00").do(makeTweet)
+schedule.every().day.at("23:00").do(makeTweet)
+schedule.every().day.at("00:00").do(makeTweet)
+schedule.every().day.at("02:00").do(makeTweet)
+schedule.every().day.at("05:00").do(makeTweet)
 
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
-makeTweet()
